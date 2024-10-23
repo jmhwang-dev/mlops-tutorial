@@ -6,13 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up test
-        uses: actions/setup-python@v4  # 최신 버전으로 업데이트
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'       # 최신 패치 버전을 자동으로 선택
+          python-version: '3.10'
       - name: Install dependencies
         run: |
-          cd devops && make install
-      - name: Lint                     # "Lint"를 잘못 쓴 것 확인
+          c devops && make install
+      - name: Lint
         run: |
           cd devops && make lint
       - name: Test
