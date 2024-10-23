@@ -1,6 +1,6 @@
-init:
-	python3 -m venv .env
-	. .env/bin/activate
+# init:
+# 	python3 -m venv .env
+# 	. .env/bin/activate
 
 install:
 	pip install --upgrade pip && \
